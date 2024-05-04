@@ -7,6 +7,7 @@
 .navbar {
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 10;
 }
 
 .collapse > .btn,
@@ -77,7 +78,7 @@
   font-weight: 400;
 }
 
-.fast-selection{
+.fast-selection {
   position: relative;
   top: -80px;
 }
@@ -87,11 +88,19 @@
   color: white;
 }
 
-.fast-selection .row > div.col-lg-3>h4 {
+.fast-selection .row > div.col-lg-3 > h4 {
   font-size: 20px;
   line-height: 31px;
   margin-top: 10px;
   font-weight: bold;
+}
+
+.engineers-h3 {
+  text-align: left;
+  font-family: PT Serif, serif;
+  font-size: 32px;
+  line-height: 46px;
+  overflow: visible;
 }
 
 .scroll {
