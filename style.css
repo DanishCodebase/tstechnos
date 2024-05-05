@@ -10,8 +10,7 @@
   z-index: 10;
 }
 
-.collapse > .btn,
-.hero .d-grid > button {
+.btn.btn-primary {
   color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -105,4 +104,23 @@
 
 .scroll {
   height: 1000vh;
+}
+
+header.flourish-header hgroup > h1 {
+  color: #0d6efd !important;
+}
+
+.our-users h2 {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.user-image{
+  max-width: 150px;
+  margin-bottom: 30px;
+}
+
+.light {
+  background-color: #effbff;
 }
