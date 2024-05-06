@@ -394,17 +394,23 @@ header.flourish-header hgroup > h1 {
   width: max-content;
 }
 
-.footer-logo{
+.footer-logo {
   display: inline-block;
   max-width: fit-content;
 }
 
-.pad{
-  padding-left: 120px;
-  padding-right: 200px!important;
+.footer-logo span {
+  color: #fff;
+  font-size: 19px;
+  line-height: 22px;
 }
 
-.pad>h5{
+.pad {
+  padding-left: 120px;
+  padding-right: 200px !important;
+}
+
+.pad > h5 {
   width: max-content;
 }
 
