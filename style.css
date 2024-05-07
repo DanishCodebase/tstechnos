@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +7,14 @@
 }
 
 .navbar {
-  background-color: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  z-index: 10;
+  background-color: rgb(255, 255, 255,0.5);
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  /* z-index: 10; */
 }
 
 .btn.btn-primary {
   color: #fff;
+  background-color: #2d64bc!important;
   letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 5px;
@@ -37,38 +40,43 @@
 
 .hero h1 {
   direction: ltr;
-  color: #013a51;
+  color: #fff!important;
   letter-spacing: 1.5px;
   text-transform: none;
   column-count: auto;
   white-space: normal;
   border: 0 solid #2ecc71;
   margin-top: 10px;
-  font-family: PT Serif, serif;
-  font-size: 42px;
+  font-family: "Nunito", sans-serif;
+  font-size: 56px;
   font-weight: 700 !important;
-  line-height: 60px !important;
+  line-height: 56px !important;
   transition: opacity 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .fast {
   text-align: center;
   margin-bottom: 16px;
+  color: #fff!important;
 }
 
 .hero {
-  background-color: #fff;
-  background-image: url(./assets/images/taln.cloud.jpg);
+  background-color: #000;
+  color: #fff;
+  background-image: url(./assets/images/Trustworthy.png);
   background-position: 0 0;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-bottom: 0 solid rgba(0, 0, 0, 0);
   border-radius: 0;
   width: 100%;
-  height: auto;
+  height: 100vh;
   max-height: none;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 0;
   padding: 60px 30px;
+  padding-top: 120px;
   display: block;
   position: static;
 }
@@ -77,10 +85,10 @@
   font-weight: 400;
 }
 
-.fast-selection {
+/* .fast-selection {
   position: relative;
   top: -80px;
-}
+} */
 
 .fast-selection .row > div.col-lg-3 {
   text-align: center;
