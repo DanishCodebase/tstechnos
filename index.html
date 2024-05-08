@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <section class="fast-selection bg-primary">
+    <section class="fast-selection">
       <div class="container col-xxl-8 py-5">
         <div class="row">
           <div class="col-lg-3">
@@ -574,10 +574,10 @@
     </section>
 
     <section class="client py-5">
-      <div class="container col-xxl-9 py-5">
+      <div class="container-lg col-xxl-9 py-5">
         <h2 class="text-center">Hear From Our Clients</h2>
         <div class="row">
-          <div class="col-md-10 mx-auto">
+          <div class="col-xl-10 mx-auto">
             <div
               id="myCarousel"
               class="carousel slide"
@@ -614,21 +614,19 @@
                       <div class="thumb-wrapper">
                         <div class="thumb-content">
                           <p class="testimonial-p">
+                            TALN supported our product development with many
+                            seasoned full-stack developers, whose strengths are
+                            understanding business requirements very quickly and
+                            translating them into solutions.
                             <strong
-                              >TALN has been our Technology Partner for the past
-                              several years.</strong
+                              >TALN scaled up the team quickly to meet
+                              additional staffing requirements.</strong
                             >
-                            They played a great role in adding value to some of
-                            our initiatives. Their thorough knowledge in
-                            technology, precise technical acumen, and ability to
-                            instantly augment a team significantly added value
-                            to us. In all they have been highly dependable
-                            partner.
                           </p>
                           <h3 class="testimonial-name">
-                            <strong>Ryan Walker, VP Product Development</strong>
+                            <strong>Quinn Wong, Founder</strong>
                           </h3>
-                          <div class="testimonial-title">BT USA</div>
+                          <div class="testimonial-title">CirruxSolutions</div>
                         </div>
                       </div>
                     </div>
@@ -640,21 +638,21 @@
                       <div class="thumb-wrapper">
                         <div class="thumb-content">
                           <p class="testimonial-p">
+                            A very progressive and right set of minds is the
+                            definition here.
                             <strong
-                              >TALN has been our Technology Partner for the past
-                              several years.</strong
+                              >Everyone who is part of the TALN’ success journey
+                              possess great professionalism and positive
+                              culture.</strong
                             >
-                            They played a great role in adding value to some of
-                            our initiatives. Their thorough knowledge in
-                            technology, precise technical acumen, and ability to
-                            instantly augment a team significantly added value
-                            to us. In all they have been highly dependable
-                            partner.
+                            Smart work is what helps in giving an edge to the
+                            organization in this competitive world. Glad to be
+                            part of the client list of TALN.
                           </p>
                           <h3 class="testimonial-name">
-                            <strong>Ryan Walker, VP Product Development</strong>
+                            <strong>‍Vidhie Gupta, BDM</strong>
                           </h3>
-                          <div class="testimonial-title">BT USA</div>
+                          <div class="testimonial-title">IT Services</div>
                         </div>
                       </div>
                     </div>
@@ -663,20 +661,18 @@
                         <div class="thumb-content">
                           <p class="testimonial-p">
                             <strong
-                              >TALN has been our Technology Partner for the past
-                              several years.</strong
+                              >With TALN, we are able to find talented
+                              developers in a matter of weeks instead of
+                              months.</strong
                             >
-                            They played a great role in adding value to some of
-                            our initiatives. Their thorough knowledge in
-                            technology, precise technical acumen, and ability to
-                            instantly augment a team significantly added value
-                            to us. In all they have been highly dependable
-                            partner.
+                            The quality of talent they supply is extremely high
+                            as the developers are able to immediately onboard
+                            and ramp incredibly fast.
                           </p>
                           <h3 class="testimonial-name">
-                            <strong>Ryan Walker, VP Product Development</strong>
+                            <strong>Mike Posner, Product Development</strong>
                           </h3>
-                          <div class="testimonial-title">BT USA</div>
+                          <div class="testimonial-title">GivingMart</div>
                         </div>
                       </div>
                     </div>
@@ -811,7 +807,7 @@
           resource based on your requirements.
         </p>
         <form
-          action="forms/contact.php"
+          id="form"
           method="post"
           role="form"
           class="php-email-form p-3 p-md-4"
@@ -831,14 +827,23 @@
               <input
                 type="email"
                 class="form-control"
-                name="email"
+                name="email_id"
                 id="email"
                 placeholder="Your Email"
                 required=""
               />
             </div>
           </div>
-
+          <div class="form-group">
+            <input
+              type="tel"
+              class="form-control"
+              name="number"
+              id="number"
+              placeholder="Mobile Number"
+              required=""
+            />
+          </div>
           <div class="form-group">
             <textarea
               class="form-control"
@@ -848,14 +853,12 @@
               required=""
             ></textarea>
           </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">
-              Your message has been sent. Thank you!
-            </div>
-          </div>
-          <button class="btn btn-primary d-block mx-auto mt-4" type="submit">
+          <button
+            class="btn btn-primary d-block mx-auto mt-4"
+            type="submit"
+            id="button"
+            value="Send Email"
+          >
             Inquire Now
           </button>
         </form>
@@ -986,10 +989,19 @@
     </section>
 
     <!-- <section class="scroll light"></section> -->
+    <script src="function.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("_U5nEuFBvAG4Cz8vS");
+    </script>
   </body>
 </html>

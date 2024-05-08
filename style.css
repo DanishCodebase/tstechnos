@@ -9,7 +9,7 @@
 .navbar {
   background-color: rgb(255, 255, 255,0.5);
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-  /* z-index: 10; */
+  z-index:10;
 }
 
 .btn.btn-primary {
@@ -24,6 +24,7 @@
   font-weight: 700;
   line-height: 20px;
   transition: all 0.2s;
+  border: none;
 }
 
 .nav-link {
@@ -63,7 +64,7 @@
 .hero {
   background-color: #000;
   color: #fff;
-  background-image: url(./assets/images/Trustworthy.png);
+  background-image: url(./assets/images/Trustworthy\ \(1\).png);
   background-position: 0 0;
   background-size: cover;
   background-position: center;
@@ -85,10 +86,9 @@
   font-weight: 400;
 }
 
-/* .fast-selection {
-  position: relative;
-  top: -80px;
-} */
+.fast-selection {
+  background-color: #2d64bc;
+}
 
 .fast-selection .row > div.col-lg-3 {
   text-align: center;
