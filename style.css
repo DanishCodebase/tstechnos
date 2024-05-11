@@ -538,6 +538,10 @@ header.flourish-header hgroup > h1 {
   padding-right: 200px !important;
 }
 
+.last-pad {
+  padding-right: 0px !important;
+}
+
 .pad > h5 {
   width: max-content;
 }
@@ -546,7 +550,7 @@ header.flourish-header hgroup > h1 {
   background-color: #effbff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.5px) {
   .nav-divider {
     margin: auto;
     width: 200px;
@@ -561,6 +565,24 @@ header.flourish-header hgroup > h1 {
   .team-image {
     position: static;
   }
+
+  .engineers,
+  .engineers-h3 {
+    text-align: center;
+  }
+
+  .engineers-h3 {
+    margin-top: 50px;
+  }
+
+  .pad {
+    padding-left: 80px;
+    padding-right: 140px !important;
+  }
+
+  .last-pad {
+    padding-right: 0px !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -569,23 +591,46 @@ header.flourish-header hgroup > h1 {
     filter: grayscale(25%);
   }
 
-  .hero .col-lg-6{
+  .hero .col-lg-6 {
     margin-top: 90px;
+  }
+
+  .footer-logo{
+    margin-bottom: 30px!important;
+  }
+
+  .pad {
+    padding-left: 10px;
+    padding-right: 0px !important;
+    margin-bottom: 30px!important;
+  }
+
+  .last-pad {
+    padding-left: 10px;
+    padding-right: 0px !important;
   }
 }
 
-@media (max-width: 330px) {
+/* @media (max-width: 430px) {
 
-  .hero .col-lg-6{
+  .pad {
+    padding-left: 20px;
+    padding-right: 0px !important;
+  }
+
+  .last-pad {
+    padding-left: 20px;
+    padding-right: 0px !important;
+  }
+} */
+
+@media (max-width: 330px) {
+  .hero .col-lg-6 {
     margin-top: 15px;
   }
 
-  .hero h1{
+  .hero h1 {
     font-size: 30px;
-    line-height: 36px!important;
+    line-height: 36px !important;
   }
 }
-
-
-
-
