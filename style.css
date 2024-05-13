@@ -86,6 +86,14 @@
   font-weight: 400;
 }
 
+.product-img{
+  border-radius: 10px;
+  /* background-image: url(./assets/images/product-img-removebg.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+
 .fast-selection {
   background-color: #2d64bc;
 }
