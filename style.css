@@ -185,6 +185,13 @@ html,body{
   background-image: url(https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/2-basant-abraham.jpg);
 }
 
+.img4 {
+  background-image: url(./assets/images/technology.png);
+  /* display: block; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .engineers-h3 {
   text-align: left;
   /* font-family: PT Serif, serif; */
@@ -201,6 +208,11 @@ header.flourish-header hgroup > h1 {
   color: #0d6efd !important;
 }
 
+.our-users>.container{
+  padding-top: 30px!important;
+  padding-bottom: 30px!important;
+}
+
 .our-users h2 {
   font-weight: 400;
   font-size: 24px;
@@ -209,7 +221,7 @@ header.flourish-header hgroup > h1 {
 
 .user-image {
   max-width: 150px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .hire-p {
@@ -281,7 +293,7 @@ header.flourish-header hgroup > h1 {
   color: #fff;
   text-align: center;
   margin-bottom: 16px;
-  font-family: PT Serif, serif;
+  /* font-family: PT Serif, serif; */
   font-size: 30px;
 }
 
