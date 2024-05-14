@@ -6,8 +6,12 @@
   box-sizing: border-box;
 }
 
+html,body{
+  font-family: "Nunito", sans-serif;
+}
+
 .navbar {
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.5) !important;
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   z-index: 10;
 }
@@ -86,7 +90,7 @@
   font-weight: 400;
 }
 
-.product-img{
+.product-img {
   border-radius: 10px;
   /* background-image: url(./assets/images/product-img-removebg.png);
   background-position: right;
@@ -183,7 +187,7 @@
 
 .engineers-h3 {
   text-align: left;
-  font-family: PT Serif, serif;
+  /* font-family: PT Serif, serif; */
   font-size: 32px;
   line-height: 46px;
   overflow: visible;
@@ -675,6 +679,10 @@ header.flourish-header hgroup > h1 {
   }
 }
 
+.product h2 {
+  font-size: 36px !important;
+}
+
 @media (max-width: 576px) {
   .hero {
     background-image: url(./assets/images/Trustworthy.webp);
@@ -698,6 +706,22 @@ header.flourish-header hgroup > h1 {
   .last-pad {
     padding-left: 10px;
     padding-right: 0px !important;
+  }
+
+  .product h2 {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 451px) {
+  .product h2 {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .product h2 {
+    font-size: 20px !important;
   }
 }
 
@@ -724,3 +748,59 @@ header.flourish-header hgroup > h1 {
     line-height: 36px !important;
   }
 }
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.product ul {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.product li {
+  color: #2d64bc;
+  list-style: none;
+  animation: 1s backInDown;
+}
+
+@keyframes backInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product li::before {
+  content: "\a0";
+}
+
+.hide {
+  display: none;
+}
+
+.fluid-container > h2 {
+  color: #000;
+}
+
+@media (min-width: 576px) {
+  .product-text {
+    padding: 0;
+  }
+
+  .image-p {
+    padding-left: 0;
+  }
+}
+
+

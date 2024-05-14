@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar position-fixed top-0 w-100 navbar-expand-lg">
+    <nav class="navbar position-fixed top-0 w-100 navbar-expand-lg autohide">
       <div class="container col-xxl-8">
         <a class="navbar-brand" href="./index.html">
           <img src="./assets/images/tslogo.png" height="60" alt="" />
@@ -78,25 +78,35 @@
             </h1>
             <p class="lead">Your partner in business</p>
             <div class="d-grid gap-2 d-flex justify-content-md-start">
-              <button
+              <a href="#product"
                 type="button"
                 class="btn btn-primary btn-lg px-4 me-md-2 mt-3"
               >
-                Hire developers
-              </button>
+                Learn More
+            </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="product" id="product">
+    <div id="product"></div>
+    <section class="product">
       <div class="container col-xxl-9 px-4">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Hire the Best Animation
-            </h1>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+          <div class="col-lg-7 col-xl-6 product-text">
+            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-4 d-flex">
+              <span>Hire the Best</span>  
+              <ul>
+                <li class="hide">Developer</li>
+                <li class="hide">Designer</li>
+                <li class="hide">DevOps Engineer</li>
+                <!-- <li class="hide">Bike Insurance</li>
+                <li class="hide">Car Insurance</li>
+                <li class="hide">Health Insurance</li>
+                <li class="hide">Life Insurance</li>
+                <li class="hide">Algo Trading</li> -->
+              </ul>
+            </h2>
             <p class="lead">
               Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world. Top companies hire Toptal freelancers for their most important projects.
             </p>
@@ -109,7 +119,7 @@
               </button>
             </div>
           </div>
-          <div class="col-10 col-sm-8 col-lg-6">
+          <div class="col-10 col-sm-8 col-lg-5 col-xl-6 image-p">
             <img
               src="./assets/images/product-img1.jpg"
               class="d-block mx-lg-auto product-img img-fluid"
@@ -123,8 +133,8 @@
     </section>
 
     <section class="fast-selection">
-      <div class="container col-xxl-8 py-4">
-        <h2 class="text-center text-white mb-4">What’s in it for you?</h2>
+      <div class="container col-xxl-8 pb-3">
+        <h2 class="text-center text-white pt-3 mb-4">What’s in it for you?</h2>
         <div class="row">
           <div class="col-sm-6 col-lg-3">
             <img
@@ -167,6 +177,7 @@
     </section>
 
     <section class="fluid-container">
+      <h2 class="text-center py-5 light mb-0 border-bottom">Why Organizations Choose Technos</h2>
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -477,9 +488,9 @@
           </div>
 
           <div class="col">
-            <h4 class="our-promise">Our Promise</h4>
+            <h4 class="our-promise">Our Commitment</h4>
             <h2 class="fw-bold text-body-emphasis">
-              Get The Best Talents From Our Talent Cloud
+              Get The Best Talents
             </h2>
             <p class="text-body-secondary">
               We match and manage the best software engineers from our talent
@@ -531,7 +542,7 @@
       </button>
     </section>
 
-    <section class="demand">
+    <!-- <section class="demand">
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-5">
           <div
@@ -610,9 +621,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="easy light py-5">
+    <!-- <section class="easy light py-5">
       <div class="container col-xxl-8 px-3 py-5">
         <h2 class="text-center mb-5">
           How You Make a Difference to Make Hiring Made Easy
@@ -674,7 +685,7 @@
           hire developers
         </button>
       </div>
-    </section>
+    </section> -->
 
     <section class="blog py-5">
       <div class="container col-xxl-8 px-4 py-5">
