@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technocratic Solution</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css"
+      integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -57,269 +64,273 @@
             </li>
           </ul>
           <div class="nav-divider"></div>
-          <button class="btn btn-primary d-block mx-auto mx-lg-0" type="submit">
+          <button
+            class="btn btn-primary d-block mx-auto mx-lg-0"
+            id="developer"
+            type="submit"
+          >
             HIRE DEVELOPERS
           </button>
         </div>
       </div>
     </nav>
-
-    <section class="hero">
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <!-- <img src="./assets/images/Trustworthy.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy"> -->
-          </div>
-          <div class="col-lg-6 mt-sm-0 p-0">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Experience <br />excellence <br /><span class="fast text-primary"
-                >with us.</span
-              >
-            </h1>
-            <p class="lead">Your partner in business</p>
-            <div class="d-grid gap-2 d-flex justify-content-md-start">
-              <a
-                href="#product"
-                type="button"
-                class="btn btn-primary btn-lg px-4 me-md-2 mt-3"
-              >
-                Learn More
-              </a>
+    <div id="fullpage">
+      <section class="hero section">
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <!-- <img src="./assets/images/Trustworthy.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy"> -->
+            </div>
+            <div class="col-lg-6 mt-sm-0 p-0">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Experience <br />excellence <br /><span
+                  class="fast text-primary"
+                  >with us.</span
+                >
+              </h1>
+              <p class="lead">Your partner in business</p>
+              <div class="d-grid gap-2 d-flex justify-content-md-start">
+                <a
+                  href="#product"
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2 mt-3"
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div id="product"></div>
-    <section class="product">
-      <div class="container col-xxl-9 px-4">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
-          <div class="col-lg-7 col-xl-6 product-text">
-            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-4 d-flex">
-              <span>Hire the Best</span>
-              <ul>
-                <li class="hide">Developers</li>
-                <li class="hide">Designers</li>
-                <li class="hide">DevOps Engineers</li>
-                <li class="hide">Product Managers</li>
-                <li class="hide">Project Managers</li>
-                <!-- <li class="hide">Health Insurance</li>
+      </section>
+      <!-- <div id="product"></div> -->
+      <section class="product section" id="product">
+        <div class="container col-xxl-9 px-4">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+            <div class="col-lg-7 col-xl-6 product-text">
+              <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-4 d-flex">
+                <span>Hire the Best</span>
+                <ul>
+                  <li class="hide">Developers</li>
+                  <li class="hide">Designers</li>
+                  <li class="hide">DevOps Engineers</li>
+                  <li class="hide">Product Managers</li>
+                  <li class="hide">Project Managers</li>
+                  <!-- <li class="hide">Health Insurance</li>
                 <li class="hide">Life Insurance</li>
                 <li class="hide">Algo Trading</li> -->
-              </ul>
-            </h2>
-            <p class="lead">
-              Toptal is an exclusive network of the top freelance software
-              developers, designers, finance experts, product managers, and
-              project managers in the world. Top companies hire Toptal
-              freelancers for their most important projects.
-            </p>
-            <div class="d-grid gap-2 d-flex justify-content-md-start">
-              <button
-                type="button"
-                class="btn btn-primary btn-lg px-4 me-md-2 mt-3"
-              >
-                Hire developers
-              </button>
+                </ul>
+              </h2>
+              <p class="lead">
+                Toptal is an exclusive network of the top freelance software
+                developers, designers, finance experts, product managers, and
+                project managers in the world. Top companies hire Toptal
+                freelancers for their most important projects.
+              </p>
+              <div class="d-grid gap-2 d-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2 mt-3"
+                >
+                  Hire developers
+                </button>
+              </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-5 col-xl-6 image-p">
+              <img
+                src="./assets/images/product-img1.jpg"
+                class="d-block mx-lg-auto product-img img-fluid"
+                alt="Bootstrap Themes"
+                width="300"
+                loading="lazy"
+              />
             </div>
           </div>
-          <div class="col-10 col-sm-8 col-lg-5 col-xl-6 image-p">
-            <img
-              src="./assets/images/product-img1.jpg"
-              class="d-block mx-lg-auto product-img img-fluid"
-              alt="Bootstrap Themes"
-              width="300"
-              loading="lazy"
-            />
+        </div>
+        <div class="fast-selection">
+          <div class="container col-xxl-8 pb-3">
+            <h2 class="text-center text-white fw-bold pt-3 mb-4">
+              What’s in it for you?
+            </h2>
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b5a1ec88dfb02dcee44e29_48.png"
+                  alt=""
+                />
+                <h4>Profiles Within<br />48 Hrs</h4>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b5a2161e83a3c7b233afed_re.png"
+                  alt=""
+                />
+                <h4>Pre-Vetted <br />Profiles</h4>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b5a252603862dad30cf874_7.png"
+                  alt=""
+                  width="100"
+                />
+                <h4>
+                  7 Days<br />
+                  Risk-Free Trial
+                </h4>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63bc10c304cd88addd66ee10_Time-Zone.png"
+                  width="100"
+                  alt=""
+                />
+                <h4>
+                  Time Zone<br />
+                  Aligned
+                </h4>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="fast-selection">
-      <div class="container col-xxl-8 pb-3">
-        <h2 class="text-center text-white fw-bold pt-3 mb-4">
-          What’s in it for you?
-        </h2>
-        <div class="row">
-          <div class="col-sm-6 col-lg-3">
-            <img
-              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b5a1ec88dfb02dcee44e29_48.png"
-              alt=""
-            />
-            <h4>Profiles Within<br />48 Hrs</h4>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <img
-              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b5a2161e83a3c7b233afed_re.png"
-              alt=""
-            />
-            <h4>Pre-Vetted <br />Profiles</h4>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <img
-              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b5a252603862dad30cf874_7.png"
-              alt=""
-              width="100"
-            />
-            <h4>
-              7 Days<br />
-              Risk-Free Trial
-            </h4>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <img
-              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63bc10c304cd88addd66ee10_Time-Zone.png"
-              width="100"
-              alt=""
-            />
-            <h4>
-              Time Zone<br />
-              Aligned
-            </h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="fluid-container light border-bottom pb-5">
-      <div class="pb-5">
-        <h2 class="text-center py-5 light mb-0 border-bottom fw-bold">
-          Why Organizations Choose Technos
-        </h2>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col col-md-5 col-xl-4 light p-5">
-                  <h2 class="fs-1 mb-4 ms-xl-5 ps-xl-5">
-                    Authenticity matters
-                  </h2>
-                  <p class="mb-4 ms-xl-5 ps-xl-5">
-                    When it comes to talent solutions, authenticity matters. In
-                    order to solve business problems you need to have open and
-                    frank discussions. Painting a rosy picture just won’t cut
-                    it. Let’s paint together the right picture for you and your
-                    business.
-                  </p>
-                  <a href="" class="carousel-btn">Read More</a>
-                </div>
-                <div class="col img-col img1">
-                  <!-- <img
+      <section class="fluid-container section light border-bottom pb-5">
+        <div class="pb-5">
+          <h2 class="text-center py-5 light mb-0 border-bottom fw-bold">
+            Why Organizations Choose Technos
+          </h2>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col col-md-5 col-xl-4 light p-5">
+                    <h2 class="fs-1 mb-4 ms-xl-5 ps-xl-5">
+                      Authenticity matters
+                    </h2>
+                    <p class="mb-4 ms-xl-5 ps-xl-5">
+                      When it comes to talent solutions, authenticity matters.
+                      In order to solve business problems you need to have open
+                      and frank discussions. Painting a rosy picture just won’t
+                      cut it. Let’s paint together the right picture for you and
+                      your business.
+                    </p>
+                    <a href="" class="carousel-btn">Read More</a>
+                  </div>
+                  <div class="col img-col img1">
+                    <!-- <img
                   src="https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/wayne-giddings.png"
                   class="d-block w-100"
                   alt="..."
                 /> -->
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col col-md-5 col-xl-4 light p-5">
-                  <h2 class="fs-1 mb-4 ms-xl-5 ps-xl-5">
-                    Authenticity matters
-                  </h2>
-                  <p class="mb-4 ms-xl-5 ps-xl-5">
-                    When it comes to talent solutions, authenticity matters. In
-                    order to solve business problems you need to have open and
-                    frank discussions. Painting a rosy picture just won’t cut
-                    it. Let’s paint together the right picture for you and your
-                    business.
-                  </p>
-                  <a href="" class="carousel-btn">Read More</a>
-                </div>
-                <div class="col img-col img2">
-                  <!-- <img
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col col-md-5 col-xl-4 light p-5">
+                    <h2 class="fs-1 mb-4 ms-xl-5 ps-xl-5">
+                      Authenticity matters
+                    </h2>
+                    <p class="mb-4 ms-xl-5 ps-xl-5">
+                      When it comes to talent solutions, authenticity matters.
+                      In order to solve business problems you need to have open
+                      and frank discussions. Painting a rosy picture just won’t
+                      cut it. Let’s paint together the right picture for you and
+                      your business.
+                    </p>
+                    <a href="" class="carousel-btn">Read More</a>
+                  </div>
+                  <div class="col img-col img2">
+                    <!-- <img
                   src="https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/pete-hamilton-carousel.png"
                   class="d-block w-100"
                   alt="..."
                 /> -->
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col col-md-5 col-xl-4 light p-5">
-                  <h2 class="fs-1 mb-4 ms-xl-5 ps-xl-5">
-                    Authenticity matters
-                  </h2>
-                  <p class="mb-4 ms-xl-5 ps-xl-5">
-                    When it comes to talent solutions, authenticity matters. In
-                    order to solve business problems you need to have open and
-                    frank discussions. Painting a rosy picture just won’t cut
-                    it. Let’s paint together the right picture for you and your
-                    business.
-                  </p>
-                  <a href="" class="carousel-btn">Read More</a>
-                </div>
-                <div class="col img-col img3">
-                  <!-- <img
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col col-md-5 col-xl-4 light p-5">
+                    <h2 class="fs-1 mb-4 ms-xl-5 ps-xl-5">
+                      Authenticity matters
+                    </h2>
+                    <p class="mb-4 ms-xl-5 ps-xl-5">
+                      When it comes to talent solutions, authenticity matters.
+                      In order to solve business problems you need to have open
+                      and frank discussions. Painting a rosy picture just won’t
+                      cut it. Let’s paint together the right picture for you and
+                      your business.
+                    </p>
+                    <a href="" class="carousel-btn">Read More</a>
+                  </div>
+                  <div class="col img-col img3">
+                    <!-- <img
                   src="https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/2-basant-abraham.jpg"
                   class="d-block w-100"
                   alt="..."
                 /> -->
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item bg-white">
-              <div class="row">
-                <div class="col col-md-5 col-xl-4 light p-5">
-                  <h2 class="fs-1 mb-4 ms-xl-5 ps-xl-5">
-                    Our Engineers Have All Your Frameworks Covered
-                  </h2>
-                  <p class="ms-xl-5 ps-xl-5">
-                    From Node to Java, AWS to Airtable, we will get the right
-                    skilled engineer to join your organization.
-                  </p>
-                  <!-- <a href="" class="carousel-btn">Read More</a> -->
-                </div>
-                <div class="col img-col img4">
-                  <!-- <img
+              <div class="carousel-item bg-white">
+                <div class="row">
+                  <div class="col col-md-5 col-xl-4 light p-5">
+                    <h2 class="fs-1 mb-4 ms-xl-5 ps-xl-5">
+                      Our Engineers Have All Your Frameworks Covered
+                    </h2>
+                    <p class="ms-xl-5 ps-xl-5">
+                      From Node to Java, AWS to Airtable, we will get the right
+                      skilled engineer to join your organization.
+                    </p>
+                    <!-- <a href="" class="carousel-btn">Read More</a> -->
+                  </div>
+                  <div class="col img-col img4">
+                    <!-- <img
                   src="https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/2-basant-abraham.jpg"
                   class="d-block w-100"
                   alt="..."
                 /> -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- <section class="engineers mt-5 pt-3">
+      <!-- <section class="engineers mt-5 pt-3">
       <div class="container col-xxl-8 px-4 pt-4 mb-5 pb-5">
         <div
           class="row flex-column-reverse flex-md-row-reverse align-items-center g-0 g-md-5"
@@ -361,229 +372,229 @@
       </div>
     </section> -->
 
-    <section class="our-users light">
-      <div class="container col-xxl-8 py-5">
-        <h2>Trusted By Companies</h2>
-        <div
-          class="user-wrapper d-flex justify-content-around justify-content-lg-between align-items-center mt-4 flex-wrap"
-        >
-          <img
-            src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/631b3372bdadc49be9414aad_logo1-2.webp"
-            loading="lazy"
-            class="user-image"
-            alt=""
-          />
-          <img
-            src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63bd80f091b1708e9615430d_logo5.png"
-            loading="lazy"
-            class="user-image"
-            alt=""
-          />
-          <img
-            src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/631b396e8e8cbd3fc0929c4a_logo2-1.webp"
-            loading="lazy"
-            class="user-image"
-            alt=""
-          />
-          <img
-            src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/631b396ff0282f26455f2088_logo3-1.webp"
-            loading="lazy"
-            class="user-image"
-            alt=""
-          />
-          <img
-            src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/631b3971c2793a24268b670a_logo4-1.webp"
-            loading="lazy"
-            class="user-image"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="hire-best">
-      <div class="container col-xxl-8 py-5">
-        <h2 class="text-center fw-bold">Hire The Best, Forget The Rest</h2>
-        <p class="lead fs-6 text-center">
-          Our 4-step hiring process to hire top software developers from India.
-        </p>
-        <div class="row mt-4 text-center">
-          <div class="col-lg-3">
+      <section class="our-users section fp-auto-height light">
+        <div class="container col-xxl-8 py-5">
+          <h2>Trusted By Companies</h2>
+          <div
+            class="user-wrapper d-flex justify-content-around justify-content-lg-between align-items-center mt-4 flex-wrap"
+          >
             <img
-              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/630635487f127e588b4d9f23_step1.webp"
+              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/631b3372bdadc49be9414aad_logo1-2.webp"
+              loading="lazy"
+              class="user-image"
               alt=""
             />
-            <p class="lead hire-p">Share your requirements</p>
-          </div>
-          <div class="col-lg-3">
             <img
-              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306354a4aaa9053573eda9f_step2.webp"
+              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63bd80f091b1708e9615430d_logo5.png"
+              loading="lazy"
+              class="user-image"
               alt=""
             />
-            <p class="lead hire-p">Shortlisted profiles share with you</p>
-          </div>
-          <div class="col-lg-3">
             <img
-              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306354b5777201a172da310_step3.webp"
+              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/631b396e8e8cbd3fc0929c4a_logo2-1.webp"
+              loading="lazy"
+              class="user-image"
               alt=""
             />
-            <p class="lead hire-p">Select the right candidate by you</p>
-          </div>
-          <div class="col-lg-3">
             <img
-              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306354b4bcca842be34aad2_step4.webp"
+              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/631b396ff0282f26455f2088_logo3-1.webp"
+              loading="lazy"
+              class="user-image"
               alt=""
             />
-            <p class="lead hire-p">Swift onboarding & support</p>
+            <img
+              src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/631b3971c2793a24268b670a_logo4-1.webp"
+              loading="lazy"
+              class="user-image"
+              alt=""
+            />
           </div>
         </div>
-      </div>
-      <!-- <button class="btn btn-primary d-block mx-auto mb-5" type="submit">
+        <div class="hire-best bg-white">
+          <div class="container col-xxl-8 pt-5">
+            <h2 class="text-center fw-bold">Hire The Best, Forget The Rest</h2>
+            <p class="lead fs-6 text-center">
+              Our 4-step hiring process to hire top software developers from
+              India.
+            </p>
+            <div class="row mt-4 text-center">
+              <div class="col-lg-3">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/630635487f127e588b4d9f23_step1.webp"
+                  alt=""
+                />
+                <p class="lead hire-p">Share your requirements</p>
+              </div>
+              <div class="col-lg-3">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306354a4aaa9053573eda9f_step2.webp"
+                  alt=""
+                />
+                <p class="lead hire-p">Shortlisted profiles share with you</p>
+              </div>
+              <div class="col-lg-3">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306354b5777201a172da310_step3.webp"
+                  alt=""
+                />
+                <p class="lead hire-p">Select the right candidate by you</p>
+              </div>
+              <div class="col-lg-3">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306354b4bcca842be34aad2_step4.webp"
+                  alt=""
+                />
+                <p class="lead hire-p">Swift onboarding & support</p>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="btn btn-primary d-block mx-auto mb-5" type="submit">
         hire developers
       </button> -->
-    </section>
-
-    <section class="promise light">
-      <div class="container col-xxl-8 px-lg-4 py-5">
-        <div
-          class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
-        >
-          <div class="col d-flex flex-column align-items-start gap-2">
-            <div class="row row-cols-2 g-4">
-              <div class="col d-flex flex-column gap-2">
-                <div class="technos-div text-center">
-                  <div
-                    class="feature-icon-small d-inline-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b6cd274cd6e25320aebd2f_1.png"
-                      loading="lazy"
-                      alt="Success Rate"
-                      height="32"
-                      width="32"
-                      class="technos-image"
-                    />
-                  </div>
-                  <h4 class="fw-semibold mb-0 text-body-emphasis">98%</h4>
-                  <p class="text-body-secondary">Success Rate</p>
-                </div>
-              </div>
-
-              <div class="col d-flex flex-column gap-2">
-                <div class="technos-div text-center">
-                  <div
-                    class="feature-icon-small d-inline-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b6cf07076a331456aec058_2.png"
-                      loading="lazy"
-                      alt="Success Rate"
-                      height="32"
-                      width="32"
-                      class="technos-image"
-                    />
-                  </div>
-                  <h4 class="fw-semibold mb-0 text-body-emphasis">100%</h4>
-                  <p class="text-body-secondary">Dedicated Time</p>
-                </div>
-              </div>
-
-              <div class="col d-flex flex-column gap-2">
-                <div class="technos-div text-center">
-                  <div
-                    class="feature-icon-small d-inline-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b6cf1ca775aaaf81932cf5_3.png"
-                      loading="lazy"
-                      alt="Success Rate"
-                      height="32"
-                      width="32"
-                      class="technos-image"
-                    />
-                  </div>
-                  <h4 class="fw-semibold mb-0 text-body-emphasis">5+ hrs</h4>
-                  <p class="text-body-secondary">Daily Overlap</p>
-                </div>
-              </div>
-
-              <div class="col d-flex flex-column gap-2">
-                <div class="technos-div text-center">
-                  <div
-                    class="feature-icon-small d-inline-flex align-items-center justify-content-center"
-                  >
-                    <img
-                      src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b6cf5dd3adb49b79b16654_4.png"
-                      loading="lazy"
-                      alt="Success Rate"
-                      height="32"
-                      width="32"
-                      class="technos-image"
-                    />
-                  </div>
-                  <h4 class="fw-semibold mb-0 text-body-emphasis">
-                    &lt;4 Days
-                  </h4>
-                  <p class="text-body-secondary">Or Less to Hire</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <h4 class="our-promise">Our Commitment</h4>
-            <h2 class="fw-bold text-body-emphasis">Get The Best Talents</h2>
-            <p class="text-body-secondary">
-              We match and manage the best software engineers from our talent
-              cloud to build your company’s long term success
-            </p>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="about bg-image">
-      <div class="container col-xxl-8 px-lg-4 py-5 pb-4">
-        <h2 class="about-h2 text-center">About TECHNOS</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="abt-div">
-              <h4>10+ Yrs <br />Experience</h4>
-              <p>
-                Founded by successful entrepreneurs, Arun and Kavitha, TECHNOS
-                was created out of the experience running IT Services company
-                for a decade.
-              </p>
+      <section class="promise section light">
+        <div class="container col-xxl-8 px-lg-4 py-5">
+          <div
+            class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
+          >
+            <div class="col d-flex flex-column align-items-start gap-2">
+              <div class="row row-cols-2 g-4">
+                <div class="col d-flex flex-column gap-2">
+                  <div class="technos-div text-center">
+                    <div
+                      class="feature-icon-small d-inline-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b6cd274cd6e25320aebd2f_1.png"
+                        loading="lazy"
+                        alt="Success Rate"
+                        height="32"
+                        width="32"
+                        class="technos-image"
+                      />
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">98%</h4>
+                    <p class="text-body-secondary">Success Rate</p>
+                  </div>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div class="technos-div text-center">
+                    <div
+                      class="feature-icon-small d-inline-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b6cf07076a331456aec058_2.png"
+                        loading="lazy"
+                        alt="Success Rate"
+                        height="32"
+                        width="32"
+                        class="technos-image"
+                      />
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">100%</h4>
+                    <p class="text-body-secondary">Dedicated Time</p>
+                  </div>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div class="technos-div text-center">
+                    <div
+                      class="feature-icon-small d-inline-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b6cf1ca775aaaf81932cf5_3.png"
+                        loading="lazy"
+                        alt="Success Rate"
+                        height="32"
+                        width="32"
+                        class="technos-image"
+                      />
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">5+ hrs</h4>
+                    <p class="text-body-secondary">Daily Overlap</p>
+                  </div>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div class="technos-div text-center">
+                    <div
+                      class="feature-icon-small d-inline-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63b6cf5dd3adb49b79b16654_4.png"
+                        loading="lazy"
+                        alt="Success Rate"
+                        height="32"
+                        width="32"
+                        class="technos-image"
+                      />
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">
+                      &lt;4 Days
+                    </h4>
+                    <p class="text-body-secondary">Or Less to Hire</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="abt-div">
-              <h4>1000+ <br />IT Talents</h4>
-              <p>
-                TECHNOS has build a database of 1000+ pre-vetted resources
-                across different technologies. Who are ready to be deployed
-                immediately on your assignments
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="abt-div">
-              <h4>250+ <br />Partners</h4>
-              <p>
-                Finding top programmers is a massive pain, leasing bench
-                resources from Partner IT companies is our USP and the turn
-                around time is 1-5 days.
+
+            <div class="col">
+              <h4 class="our-promise">Our Commitment</h4>
+              <h2 class="fw-bold text-body-emphasis">Get The Best Talents</h2>
+              <p class="text-body-secondary">
+                We match and manage the best software engineers from our talent
+                cloud to build your company’s long term success
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <button class="btn btn-primary d-block mx-auto mb-4" type="submit">
-        hire developers
-      </button>
-    </section>
+      </section>
 
-    <!-- <section class="demand">
+      <section class="about section bg-image">
+        <div class="container col-xxl-8 px-lg-4 py-5 pb-4">
+          <h2 class="about-h2 text-center">About TECHNOS</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="abt-div">
+                <h4>10+ Yrs <br />Experience</h4>
+                <p>
+                  Founded by successful entrepreneurs, Arun and Kavitha, TECHNOS
+                  was created out of the experience running IT Services company
+                  for a decade.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="abt-div">
+                <h4>1000+ <br />IT Talents</h4>
+                <p>
+                  TECHNOS has build a database of 1000+ pre-vetted resources
+                  across different technologies. Who are ready to be deployed
+                  immediately on your assignments
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="abt-div">
+                <h4>250+ <br />Partners</h4>
+                <p>
+                  Finding top programmers is a massive pain, leasing bench
+                  resources from Partner IT companies is our USP and the turn
+                  around time is 1-5 days.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary d-block mx-auto mb-4" type="submit">
+          hire developers
+        </button>
+      </section>
+
+      <!-- <section class="demand">
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-5">
           <div
@@ -664,7 +675,7 @@
       </div>
     </section>  -->
 
-     <!-- <section class="easy light py-5">
+      <!-- <section class="easy light py-5">
       <div class="container col-xxl-8 px-3 py-5">
         <h2 class="text-center mb-5">
           How You Make a Difference to Make Hiring Made Easy
@@ -728,60 +739,60 @@
       </div>
     </section> -->
 
-    <section class="blog py-5">
-      <div class="container col-xxl-8 px-4 py-5">
-        <h2 class="text-center mb-5">Latest Posts From TECHNOS</h2>
-        <div class="row g-4 g-md-3 pb-2">
-          <div class="col-md-4">
-            <div class="blog-div">
-              <img
-                src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6305de8e9d114961aa8af9b0_4-19.png"
-                loading="lazy"
-                height=""
-                alt="The Future of Remote Work is Now"
-                width="100%"
-                srcset="
-                  https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6305de8e9d114961aa8af9b0_4-19-p-500.png  500w,
-                  https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6305de8e9d114961aa8af9b0_4-19.png       1600w
-                "
-              />
-              <h4>The Future of Remote Work is Now</h4>
+      <section class="blog section py-5">
+        <div class="container col-xxl-8 px-4 py-5">
+          <h2 class="text-center mb-5">Latest Posts From TECHNOS</h2>
+          <div class="row g-4 g-md-3 pb-2">
+            <div class="col-md-4">
+              <div class="blog-div">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6305de8e9d114961aa8af9b0_4-19.png"
+                  loading="lazy"
+                  height=""
+                  alt="The Future of Remote Work is Now"
+                  width="100%"
+                  srcset="
+                    https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6305de8e9d114961aa8af9b0_4-19-p-500.png  500w,
+                    https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6305de8e9d114961aa8af9b0_4-19.png       1600w
+                  "
+                />
+                <h4>The Future of Remote Work is Now</h4>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog-div">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306307d4aaa902cd33eb01c_IT-1.webp"
+                  loading="lazy"
+                  alt="Why is it hard to hire software developers?"
+                  height=""
+                  width="100%"
+                  class="imag-size"
+                />
+                <h4>Why is it hard to hire software developers?</h4>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog-div">
+                <img
+                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306307a28686d50bcbec4f1_connection.webp"
+                  loading="lazy"
+                  alt="Misconceptions about Remote Staffing"
+                  height=""
+                  width="100%"
+                  class="imag-size"
+                />
+                <h4>Misconceptions about Remote Staffing</h4>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="blog-div">
-              <img
-                src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306307d4aaa902cd33eb01c_IT-1.webp"
-                loading="lazy"
-                alt="Why is it hard to hire software developers?"
-                height=""
-                width="100%"
-                class="imag-size"
-              />
-              <h4>Why is it hard to hire software developers?</h4>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog-div">
-              <img
-                src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6306307a28686d50bcbec4f1_connection.webp"
-                loading="lazy"
-                alt="Misconceptions about Remote Staffing"
-                height=""
-                width="100%"
-                class="imag-size"
-              />
-              <h4>Misconceptions about Remote Staffing</h4>
-            </div>
-          </div>
+          <button class="btn btn-primary d-block mx-auto mt-5" type="submit">
+            read more
+          </button>
         </div>
-        <button class="btn btn-primary d-block mx-auto mt-5" type="submit">
-          read more
-        </button>
-      </div>
-    </section>
+      </section>
 
-    <!-- <section class="contact light py-5">
+      <!-- <section class="contact section light py-5">
       <div class="container col-xxl-8 px-4 py-5">
         <h2 class="text-center">Hire Talented Developers on Contract</h2>
         <p class="lead text-center mb-5">
@@ -857,133 +868,203 @@
         </p>
       </div>
     </section> -->
+      <section class="footer section fp-auto-height">
+        <div class="container col-xxl-8 px-4">
+          <footer class="row row-cols-1 row-cols-sm-5 pt-5 pb-2">
+            <div class="col footer-logo mb-3">
+              <a
+                href="./index.html"
+                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              >
+                <img src="./assets/images/tslogo1.png" height="45" alt="" />
+                <span>Technocratic <br />Solutions</span>
+              </a>
+            </div>
+            <div class="col pad mb-3">
+              <h5 class="mb-4">Partners</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Apply to Jobs</a
+                  >
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Partner FAQs</a
+                  >
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Affiliate Program</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-    <section class="footer">
-      <div class="container col-xxl-8 px-4">
-        <footer class="row row-cols-1 row-cols-sm-5 pt-5 pb-2">
-          <div class="col footer-logo mb-3">
-            <a
-              href="./index.html"
-              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-            >
-              <img src="./assets/images/tslogo1.png" height="45" alt="" />
-              <span>Technocratic <br />Solutions</span>
-            </a>
-          </div>
-          <div class="col pad mb-3">
-            <h5 class="mb-4">Partners</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-3">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Apply to Jobs</a
-                >
+            <div class="col pad last-pad mb-3">
+              <h5 class="mb-4">Quick Link</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Careers</a
+                  >
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary">Blogs</a>
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >About TECHNOS</a
+                  >
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="nav-item mb-3">
+                  <a href="#" class="nav-link p-0 text-body-secondary"
+                    >Sitemap</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </footer>
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between pt-5 pb-4 border-top"
+          >
+            <p>© 2024. Technocratic Solutions All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="https://assets-global.website-files.com/62434fa732124a0fb112aab4/62434fa732124ac76f12aaec_product%20icon-2.svg"
+                    loading="lazy"
+                    width="35"
+                    height="35"
+                    alt="Linkedin"
+                    class="bg-white rounded-circle"
+                /></a>
               </li>
-              <li class="nav-item mb-3">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Partner FAQs</a
-                >
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="https://assets-global.website-files.com/62434fa732124a0fb112aab4/62434fa732124a4a9512aae0_product%20icon-1.svg"
+                    loading="lazy"
+                    width="35"
+                    height="35"
+                    alt="facebook"
+                    class="bg-white rounded-circle"
+                /></a>
               </li>
-              <li class="nav-item mb-3">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Affiliate Program</a
-                >
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6408451bb78debc728657b46_62434fa732124a853712aad7_product%20icon.svg"
+                    loading="lazy"
+                    width="35"
+                    height="35"
+                    alt="Twitter"
+                    class="bg-white rounded-circle"
+                /></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#"
+                  ><img
+                    src="https://assets-global.website-files.com/62434fa732124a0fb112aab4/62434fa732124a717f12aaea_youtube%20small.svg"
+                    loading="lazy"
+                    width="35"
+                    height="35"
+                    alt="YouTube"
+                    class="bg-white rounded-circle"
+                /></a>
               </li>
             </ul>
           </div>
-
-          <div class="col pad last-pad mb-3">
-            <h5 class="mb-4">Quick Link</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-3">
-                <a href="#" class="nav-link p-0 text-body-secondary">Careers</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="#" class="nav-link p-0 text-body-secondary">Blogs</a>
-              </li>
-              <li class="nav-item mb-3">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >About TECHNOS</a
-                >
-              </li>
-              <li class="nav-item mb-3">
-                <a href="#" class="nav-link p-0 text-body-secondary"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li class="nav-item mb-3">
-                <a href="#" class="nav-link p-0 text-body-secondary">Sitemap</a>
-              </li>
-            </ul>
-          </div>
-        </footer>
-        <div
-          class="d-flex flex-column flex-sm-row justify-content-between pt-5 pb-4 border-top"
-        >
-          <p>© 2024. Technocratic Solutions All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><img
-                  src="https://assets-global.website-files.com/62434fa732124a0fb112aab4/62434fa732124ac76f12aaec_product%20icon-2.svg"
-                  loading="lazy"
-                  width="35"
-                  height="35"
-                  alt="Linkedin"
-                  class="bg-white rounded-circle"
-              /></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><img
-                  src="https://assets-global.website-files.com/62434fa732124a0fb112aab4/62434fa732124a4a9512aae0_product%20icon-1.svg"
-                  loading="lazy"
-                  width="35"
-                  height="35"
-                  alt="facebook"
-                  class="bg-white rounded-circle"
-              /></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><img
-                  src="https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/6408451bb78debc728657b46_62434fa732124a853712aad7_product%20icon.svg"
-                  loading="lazy"
-                  width="35"
-                  height="35"
-                  alt="Twitter"
-                  class="bg-white rounded-circle"
-              /></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><img
-                  src="https://assets-global.website-files.com/62434fa732124a0fb112aab4/62434fa732124a717f12aaea_youtube%20small.svg"
-                  loading="lazy"
-                  width="35"
-                  height="35"
-                  alt="YouTube"
-                  class="bg-white rounded-circle"
-              /></a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <!-- <section class="scroll light"></section> --> 
+    <div class="form di-none">
+      <form id="form" method="post" role="form" class="fcontainer">
+        <div class="container-close">&times;</div>
+        <img src="./assets/images/product-img-removebg.png" alt="image" />
+        <div class="container-text">
+          <h2>Hire Talented Developers on Contract</h2>
+          <p>
+            Submit your inquiry here. We ensure you are matched with the right
+            resource based on your requirements.
+          </p>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            id="name"
+            placeholder="Your Name"
+            required=""
+          />
+          <input
+            type="email"
+            class="form-control"
+            name="email_id"
+            id="email"
+            placeholder="Your Email"
+            required=""
+          />
+          <input
+            type="number"
+            class="form-control"
+            name="number"
+            id="number"
+            placeholder="Mobile Number"
+            required=""
+          />
+          <textarea
+            class="form-control"
+            name="message"
+            rows="5"
+            placeholder="Message"
+            required=""
+          ></textarea>
+          <button
+            class="btn btn-primary d-block mx-auto mt-4"
+            type="submit"
+            id="button"
+            value="Send Email"
+          >
+            Inquire Now
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- <section class="scroll light"></section> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
+      integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new fullpage("#fullpage", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+      });
+    </script>
     <script src="function.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- <script
+    <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
 
     <script type="text/javascript">
       emailjs.init("_U5nEuFBvAG4Cz8vS");
-    </script> -->
+    </script>
   </body>
 </html>
