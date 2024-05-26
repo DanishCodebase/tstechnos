@@ -20,7 +20,7 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-:root::-webkit-scrollbar{
+:root::-webkit-scrollbar {
   display: none;
 }
 
@@ -166,6 +166,7 @@ body {
   padding-left: 0;
   background-size: cover;
   background-position: center;
+  min-height: 400px;
 }
 
 .light {
@@ -180,7 +181,7 @@ body {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 40%;
   left: 0;
   z-index: 2;
   display: flex;
@@ -192,7 +193,7 @@ body {
 }
 
 .img1 {
-  background-image: url(https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/wayne-giddings.png);
+  background-image: url(./assets/images/technology.png);
 }
 
 .img2 {
@@ -204,10 +205,14 @@ body {
 }
 
 .img4 {
-  background-image: url(./assets/images/technology.png);
+  background-image: url(https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/wayne-giddings.png);
   /* display: block; */
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.fp-table {
+  justify-content: start !important;
 }
 
 .engineers-h3 {
