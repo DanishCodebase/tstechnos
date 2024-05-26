@@ -58,9 +58,19 @@ show();
 
 document.getElementById("developer").addEventListener("click", () => {
   document.querySelector(".form").classList.toggle("di-none");
-  
 });
 
 document.querySelector(".container-close").addEventListener("click", () => {
   document.querySelector(".form").classList.toggle("di-none");
 });
+
+// var prevScrollpos = window.scrollY;
+// window.addEventListener("scroll", function () {
+//   var currentScrollPos = window.scrollY;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector(".navbar").style.top = "0";
+//   } else {
+//     document.querySelector(".navbar").style.top = "-84px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// });
