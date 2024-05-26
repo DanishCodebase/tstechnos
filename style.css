@@ -20,8 +20,26 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-:root::-webkit-scrollbar {
+/* :root::-webkit-scrollbar {
   display: none;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 body {
@@ -243,7 +261,8 @@ header.flourish-header hgroup > h1 {
 }
 
 .user-image {
-  max-width: 150px;
+  /* max-width: 150px; */
+  max-height: 50px;
   /* margin-bottom: 30px; */
 }
 
