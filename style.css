@@ -20,8 +20,12 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+:root::-webkit-scrollbar{
+  display: none;
+}
+
 body {
-  overflow-x: hide!important;
+  /* overflow-x: hide!important; */
 }
 
 .navbar {

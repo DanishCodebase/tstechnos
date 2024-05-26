@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // window.addEventListener
   }
   // if
+  document.body.style.overflowX = "hidden";
+  // document.body.style.
 });
 
 let s = 0;
