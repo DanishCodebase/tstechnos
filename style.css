@@ -217,18 +217,19 @@ body {
 }
 
 .img2 {
-  background-image: url(https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/pete-hamilton-carousel.png);
+  background-image: url(./assets/images/Seamless.jpg);
 }
 
 .img3 {
-  background-image: url(https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/2-basant-abraham.jpg);
+  background-image: url(./assets/images/tailored.jpg);
 }
 
 .img4 {
-  background-image: url(https://www.kellyocg.com/hubfs/KellyOCG_July2023/images/wayne-giddings.png);
-  /* display: block; */
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(./assets/images/Unmatched.jpg);
+}
+
+.img5 {
+  background-image: url(./assets/images/authencity.png);
 }
 
 .fp-table {
