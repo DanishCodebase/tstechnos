@@ -20,32 +20,32 @@ document.getElementById("form").addEventListener("submit", function (event) {
   );
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  el_autohide = document.querySelector(".autohide");
+// document.addEventListener("DOMContentLoaded", function () {
+//   el_autohide = document.querySelector(".autohide");
 
-  // add padding-top to bady (if necessary)
-  navbar_height = document.querySelector(".navbar").offsetHeight;
-  // document.body.style.paddingTop = navbar_height + 'px';
+//   // add padding-top to bady (if necessary)
+//   navbar_height = document.querySelector(".navbar").offsetHeight;
+//   // document.body.style.paddingTop = navbar_height + 'px';
 
-  if (el_autohide) {
-    var last_scroll_top = 0;
-    window.addEventListener("scroll", function () {
-      let scroll_top = window.scrollY;
-      if (scroll_top < last_scroll_top) {
-        el_autohide.classList.remove("scrolled-down");
-        el_autohide.classList.add("scrolled-up");
-      } else {
-        el_autohide.classList.remove("scrolled-up");
-        el_autohide.classList.add("scrolled-down");
-      }
-      last_scroll_top = scroll_top;
-    });
-    // window.addEventListener
-  }
-  // if
-  document.body.style.overflowX = "hidden";
-  // document.body.style.
-});
+//   if (el_autohide) {
+//     var last_scroll_top = 0;
+//     window.addEventListener("scroll", function () {
+//       let scroll_top = window.scrollY;
+//       if (scroll_top < last_scroll_top) {
+//         el_autohide.classList.remove("scrolled-down");
+//         el_autohide.classList.add("scrolled-up");
+//       } else {
+//         el_autohide.classList.remove("scrolled-up");
+//         el_autohide.classList.add("scrolled-down");
+//       }
+//       last_scroll_top = scroll_top;
+//     });
+//     // window.addEventListener
+//   }
+//   // if
+//   document.body.style.overflowX = "hidden";
+//   // document.body.style.
+// });
 
 let s = 0;
 function show() {
@@ -67,12 +67,15 @@ document.querySelector(".container-close").addEventListener("click", () => {
 });
 
 // var prevScrollpos = window.scrollY;
-// window.addEventListener("scroll", function () {
-//   var currentScrollPos = window.scrollY;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.querySelector(".navbar").style.top = "0";
-//   } else {
-//     document.querySelector(".navbar").style.top = "-84px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// });
+window.addEventListener("scroll", function () {
+  el_autohide = document.querySelector(".autohide");
+  var currentScrollPos = window.scrollY;
+  if (currentScrollPos > 600) {
+    el_autohide.classList.remove("scrolled-up");
+    el_autohide.classList.add("scrolled-down");
+  } else {
+    el_autohide.classList.remove("scrolled-down");
+    el_autohide.classList.add("scrolled-up");
+  }
+  // prevScrollpos = currentScrollPos;
+});
