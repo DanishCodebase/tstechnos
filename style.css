@@ -42,8 +42,9 @@ body {
   background: #555;
 }
 
+html,
 body {
-  /* overflow-x: hide!important; */
+  overflow-x: hidden !important;
 }
 
 .navbar {
@@ -106,7 +107,7 @@ body {
 .hero {
   background-color: #000;
   color: #fff;
-  background-image: url(./assets/images/Trustworthy2.webp);
+  background-image: url(https://tstechnos.netlify.app/assets/images/Trustworthy2.webp);
   background-position: 0 0;
   background-size: cover;
   background-position: center;
@@ -213,23 +214,23 @@ body {
 }
 
 .img1 {
-  background-image: url(./assets/images/technology.png);
+  background-image: url(https://tstechnos.netlify.app/assets/images/technology.png);
 }
 
 .img2 {
-  background-image: url(./assets/images/Seamless.jpg);
+  background-image: url(https://tstechnos.netlify.app/assets/images/Seamless.jpg);
 }
 
 .img3 {
-  background-image: url(./assets/images/tailored.jpg);
+  background-image: url(https://tstechnos.netlify.app/assets/images/tailored.jpg);
 }
 
 .img4 {
-  background-image: url(./assets/images/Unmatched.jpg);
+  background-image: url(https://tstechnos.netlify.app/assets/images/Unmatched.jpg);
 }
 
 .img5 {
-  background-image: url(./assets/images/authencity.png);
+  background-image: url(https://tstechnos.netlify.app/assets/images/authencity.png);
 }
 
 .fp-table {
@@ -266,6 +267,7 @@ header.flourish-header hgroup > h1 {
 .user-image {
   /* max-width: 150px; */
   max-height: 50px;
+  padding: 0 10px;
   /* margin-bottom: 30px; */
 }
 
@@ -328,6 +330,7 @@ header.flourish-header hgroup > h1 {
 
 .bg-image {
   padding-top: 40px;
+  padding-bottom: 40px;
   background-image: url(https://assets-global.website-files.com/62fe7df122d31a02e9e1bd35/63bc2617c9c4c3240114d077_Background5.jpg);
   background-position: 0 0;
   background-size: cover;
@@ -833,6 +836,30 @@ header.flourish-header hgroup > h1 {
   .fcontainer {
     margin: 0 50px;
   }
+
+  .space {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .our-users > .container {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .carousel-indicators {
+    bottom: 5%;
+  }
+
+  .border-top-0 {
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #dee2e6 !important;
+  }
+
+  .fast-selection .row > div.col-lg-3 {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 767.5px) {
@@ -858,8 +885,12 @@ header.flourish-header hgroup > h1 {
     padding-right: 0px !important;
   }
 
+  .carousel-indicators {
+    bottom: 0;
+  }
+
   .img-col {
-    display: none;
+    /* display: none; */
   }
   .fcontainer {
     grid-template-columns: 1fr;
@@ -870,6 +901,13 @@ header.flourish-header hgroup > h1 {
   .fcontainer img {
     display: none;
   }
+  .user-image {
+    margin-top: 40px;
+  }
+
+  .carousel-item .light > h2, .carousel-item .light > p{
+    text-align: center !important;
+  }
 }
 
 .product h2 {
@@ -878,8 +916,8 @@ header.flourish-header hgroup > h1 {
 
 @media (max-width: 576px) {
   .hero {
-    background-image: url(./assets/images/Trustworthy.webp);
-    filter: grayscale(25%);
+    background-image: url(https://tstechnos.netlify.app/assets/images/Trustworthy.webp);
+    filter: grayscale(20%);
   }
 
   .hero .col-lg-6 {
@@ -994,13 +1032,13 @@ header.flourish-header hgroup > h1 {
 }
 
 .scrolled-down {
-  /* transform: translateY(-100%)!important; */
-  display: none !important;
+  transform: translateY(-100%) !important;
+  /* display: none !important; */
   transition: all 0.3s ease-in-out;
 }
 .scrolled-up {
-  display: block !important;
-  /* transform: translateY(0); */
+  /* display: block !important; */
+  transform: translateY(0);
   transition: all 0.3s ease-in-out;
 }
 
