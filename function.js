@@ -79,3 +79,54 @@ window.addEventListener("scroll", function () {
   }
   // prevScrollpos = currentScrollPos;
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+        const wrapper = document.getElementById('autoScrollWrapper');
+        const scrollAmount = 1; // Amount to scroll in pixels per interval
+        const scrollInterval = 20; // Time in milliseconds for each scroll step (e.g., 20ms for smooth scroll)
+        const pauseBeforeReverse = 2000; // Pause at the end before reversing (2 seconds)
+
+        let scrollDirection = -1; // 1 for right, -1 for left
+        let scrollTimer;
+
+        function startScrolling() {
+          console.log("scrolling");
+            scrollTimer = setInterval(() => {
+                if (scrollDirection === 1) {
+                    wrapper.scrollLeft += scrollAmount;
+                    // If scrolled to the end (or near end), reverse direction
+                    if (wrapper.scrollLeft + wrapper.clientWidth >= wrapper.scrollWidth) {
+                        clearInterval(scrollTimer);
+                        setTimeout(() => {
+                            scrollDirection = -1;
+                            startScrolling();
+                        }, pauseBeforeReverse);
+                    }
+                } else {
+                    wrapper.scrollLeft -= scrollAmount;
+                    // If scrolled to the beginning (or near beginning), reverse direction
+                    if (wrapper.scrollLeft <= 0) {
+                        clearInterval(scrollTimer);
+                        setTimeout(() => {
+                            scrollDirection = 1;
+                            startScrolling();
+                        }, pauseBeforeReverse);
+                    }
+                }
+            }, scrollInterval);
+        }
+
+        // Start scrolling when the page loads
+        startScrolling();
+
+        // Optional: Pause scrolling on mouse hover and resume on mouse leave
+        wrapper.addEventListener('mouseenter', () => {
+            clearInterval(scrollTimer);
+        });
+
+        wrapper.addEventListener('mouseleave', () => {
+            startScrolling();
+        });
+    });
