@@ -719,7 +719,7 @@ header.flourish-header hgroup > h1 {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
@@ -1065,4 +1065,36 @@ header.flourish-header hgroup > h1 {
 
 .di-none {
   display: none !important;
+}
+
+
+
+.message-box-container {
+  display: flex; /* Make the container a flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100dvw;
+  background-color: transparent;
+  position: fixed;
+  z-index: 12;
+}
+
+.message-box-success {
+  /* Remove position: absolute; if you're using flexbox for centering */
+   width: fit-content;
+    height: fit-content;
+    border: 4px solid green;
+    border-radius: 13px;
+    background-color: #fefefe;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.message-box-container p {
+  font-size: 1rem;
+  color: black;
+  margin: 0;
+  width: fit-content;
 }

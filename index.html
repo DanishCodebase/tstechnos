@@ -25,6 +25,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body style="overflow-x: hidden !important">
+   <div class="message-box-container ">
+     <div class="message-box-success di-none" >
+      <img 
+      src="assets/images/success.svg" 
+      alt="success_icon"
+      >
+      <p>
+        message send succesfully
+      </p>
+     </div>
+   </div>
     <nav class="navbar position-fixed top-0 w-100 navbar-expand-lg autohide">
       <div class="container col-xxl-8">
         <a class="navbar-brand" href="./index.html">
@@ -52,7 +63,7 @@
                 >Become a Partner</a
               >
             </li>
-            <li class="nav-item dropdown me-xl-3">
+            <!-- <li class="nav-item dropdown me-xl-3">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -70,12 +81,12 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
-            </li>
+            </li> -->
           </ul>
           <div class="nav-divider"></div>
           <button
-            class="btn btn-primary d-block mx-auto mx-lg-0"
-            id="developer"
+            class="btn btn-primary d-block mx-auto mx-lg-0 developer"
+           
             type="submit"
           >
             HIRE DEVELOPERS
@@ -144,7 +155,8 @@
               <div class="d-grid gap-2 d-flex justify-content-md-start">
                 <button
                   type="button"
-                  class="btn btn-primary btn-lg px-4 me-md-2 mt-3"
+                  class="btn btn-primary btn-lg px-4 me-md-2 mt-3 developer"
+                 type="submit"
                 >
                   Hire developers
                 </button>
@@ -455,13 +467,13 @@
               alt=""
             />
             <img
-              src="/assets/images/knoxpo_logo.png"
+              src="https://www.knoxpo.com/assets/logo.png"
               loading="lazy"
               class="user-image"
               alt="knoxpo_logo"
             />
             <img
-              src="/assets/images/iksulu_logo.webp"
+              src="https://www.drupal.org/files/styles/grid-4-2x/public/Iksula-logo.png?itok=8o1ww-Ky"
               loading="lazy"
               class="user-image"
               alt="iksulu_logo"
@@ -477,7 +489,7 @@
               src="/assets/images/sphmedia_logo.webp"
               loading="lazy"
               class="user-image"
-              alt="knoxpo_logo"
+              alt="sphmedia_logo"
             />
           </div>
         </div>
@@ -1108,7 +1120,7 @@
           <input
             type="email"
             class="form-control"
-            name="email_id"
+            name="email"
             id="email"
             placeholder="Your Email"
             required=""
@@ -1200,7 +1212,7 @@
     ></script>
 
     <script type="text/javascript">
-      emailjs.init("_U5nEuFBvAG4Cz8vS");
+      emailjs.init("ivmKnOuU9ZBDay-Sm");
     </script>
   </body>
 </html>

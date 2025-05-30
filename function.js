@@ -5,13 +5,13 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   btn.value = "Sending...";
 
-  const serviceID = "default_service";
-  const templateID = "template_hpbhnef";
+  const serviceID = "service_6wjcvuh";
+  const templateID = "template_jythw5u";
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
       btn.value = "Send Email";
-      alert("Your message has been sent!");
+      showMesage("success")
     },
     (err) => {
       btn.value = "Send Email";
@@ -19,6 +19,45 @@ document.getElementById("form").addEventListener("submit", function (event) {
     }
   );
 });
+
+function showMesage(status) {
+  var statusArray = {
+    "success": "message-box-success",
+    "error": "message-box-error",
+    "warning": "message-box-warning"
+  };
+
+  // Get the specific class name based on the status
+  const className = statusArray[status];
+
+  // Check if a valid class name was found
+  if (className) {
+    // Select the message box element.
+    // Assuming your message box HTML looks something like this:
+    // <div id="myMessageBox" class="message-box di-none">Message content</div>
+    // Or if you want to select by the specific status class itself:
+    const messageBox = document.querySelector(`.${className}`); // Select by the class name
+     const form = document.querySelector(".form");
+
+    if (messageBox) {
+      // 1. Show the message box by removing the "di-none" class
+      form.classList.add("di-none");
+      messageBox.classList.remove("di-none");
+      console.log("message box displayed")
+
+
+      // 2. Set a timeout to hide it after 3 seconds
+      setTimeout(() => {
+        messageBox.classList.add("di-none"); // Add "di-none" to hide it again
+      }, 3000); // 3000 milliseconds = 3 seconds
+      console.log("message box hidden");
+    } else {
+      console.error(`Error: Message box with class ".${className}" not found.`);
+    }
+  } else {
+    console.warn(`Warning: Status "${status}" not recognized.`);
+  }
+}
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   el_autohide = document.querySelector(".autohide");
@@ -58,9 +97,13 @@ function show() {
 
 show();
 
-document.getElementById("developer").addEventListener("click", () => {
-  document.querySelector(".form").classList.toggle("di-none");
-});
+const developerButtons = document.getElementsByClassName("developer");
+
+for (let i = 0; i < developerButtons.length; i++) {
+  developerButtons[i].addEventListener("click", () => {
+    document.querySelector(".form").classList.toggle("di-none");
+  });
+}
 
 document.querySelector(".container-close").addEventListener("click", () => {
   document.querySelector(".form").classList.toggle("di-none");
@@ -92,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let scrollTimer;
 
         function startScrolling() {
-          console.log("scrolling");
+          // console.log("scrolling");
             scrollTimer = setInterval(() => {
                 if (scrollDirection === 1) {
                     wrapper.scrollLeft += scrollAmount;
